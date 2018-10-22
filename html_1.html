@@ -1,0 +1,98 @@
+<! DOCUMENT HTML>
+<html lang="en" ng-app='app'>
+<head>
+	<title>HTML Coder</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sergij Bondarenko" />
+	<meta name="descriptions" content="Определение цветовой модели сайта" />
+	<meta name="keywords" content="logo, " lang="ru" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="/css/index.css">
+	<link type="text/css" rel="stylesheet" href="/css/masonry.css">
+</head>
+<body onload="goLoad()">
+	<div class="container">
+		<div ng-controller="ctrLanguage">
+			<div class="row">
+				<h4 class="text-right"><a href="/">myOtherSkills</a></h4>
+				<div ng-switch on="lang">
+					<h1 ng-switch-when="en">HTML Coder</h1>
+					<h1 ng-switch-when="ru">Верстальщик</h1>
+					<h1 ng-switch-when="ua">Верстальник</h1>
+					<h1 ng-switch-default>HTML Coder</h1>
+				</div>
+				<hr>
+				<div class="text-right">
+					<button ng-click="setLanguage('en')" ng-class="lang == 'en' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">en</button>
+					<button ng-click="setLanguage('pl')" ng-class="lang == 'pl' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">pl</button>
+					<button ng-click="setLanguage('ru')" ng-class="lang == 'ru' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ru</button>
+					<button ng-click="setLanguage('ua')" ng-class="lang == 'ua' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ua</button>
+				</div>
+				<br>
+				
+				<div ng-switch on="lang">
+					<div ng-switch-when="en">
+						<h3>Creation and development of the organization's website</h3>
+						<p>Volunteering in the public non-governmental organization "System of Terms" during February-July 2005.</p>
+						<p>Download the code of the web-site is possible <a href="https://github.com/SergBoundary" target="_blank">here</a>.</p>
+						<br>
+						<p>Example for viewing..</p>
+					</div>					
+					<div ng-switch-when="ru">
+						<h3>Создание и развитие веб-сайта организации</h3>
+						<p>Волонтерство в Общественной неправительственной организации "Система Терминов" в течение февраля-июля 2005 года.</p>
+						<p>Скачать код сайта можно <a href="https://github.com/SergBoundary" target="_blank">здесь</a>.</p>
+						<br>
+						<p>Пример для просмотра..</p>
+					</div>					
+					<div ng-switch-when="ua">
+						<h3>Створення та розвиток веб-сайту організації</h3>
+						<p>Волонтерство у Громадській неурядовій организації "Система Термінів" протягом лютого-липня 2005 року.</p>
+						<p>Скачати код сайту можна <a href="https://github.com/SergBoundary" target="_blank">тут</a>.</p>
+						<br>
+						<p>Приклад для перегляду..</p>
+					</div>					
+					<div ng-switch-default>
+						<h3>Budowa i rozbudowa strony internetowej organizacji</h3>
+						<p>Wolontariat w Organizacji pozarządowej "Systema Terminów" w ciągu lutego-lipca 2005 roku.</p>
+						<p>Załadować kod strony internetowej można <a href="https://github.com/SergBoundary" target="_blank">tu</a>.</p>
+						<br>
+						<p>Przykład dla przeglądu..</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			<div class="row masonry" data-columns>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru000.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru000.jpg" alt=""></a>
+				</div>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru100.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru100.jpg" alt=""></a>
+				</div>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru121.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru121.jpg" alt=""></a>
+				</div>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru413.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru413.jpg" alt=""></a>
+				</div>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru41502.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru41502.jpg" alt=""></a>
+				</div>
+			</div>
+			</div>
+			<hr>
+			<div class="row">
+				<small>© 2018, Segrij Bondarenko</small>
+			</div>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/js/index.js"></script>
+    <!-- Library -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/salvattore.min.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/index.ang.js"></script>
+</body>
+</html>

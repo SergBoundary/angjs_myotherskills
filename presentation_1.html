@@ -1,0 +1,129 @@
+<! DOCUMENT HTML>
+<html lang="en" ng-app='app'>
+<head>
+	<title>Presentation designer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sergij Bondarenko" />
+	<meta name="descriptions" content="Определение цветовой модели сайта" />
+	<meta name="keywords" content="logo, " lang="ru" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="/css/index.css">
+	<link type="text/css" rel="stylesheet" href="/css/masonry.css">
+
+</head>
+<body onload="goLoad()">
+	<div class="container">
+		<div ng-controller="ctrLanguage">
+			<div class="row">
+				<h4 class="text-right"><a href="/">myOtherSkills</a></h4>
+				<div ng-switch on="lang">
+					<h1 ng-switch-when="en">Presentation designer</h1>
+					<h1 ng-switch-when="ru">Дизайнер презентаций</h1>
+					<h1 ng-switch-when="ua">Дизайнер презентацій</h1>
+					<h1 ng-switch-default>Projektant prezentacji</h1>
+				</div>
+				<hr>
+				<div class="text-right">
+					<button ng-click="setLanguage('en')" ng-class="lang == 'en' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">en</button>
+					<button ng-click="setLanguage('pl')" ng-class="lang == 'pl' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">pl</button>
+					<button ng-click="setLanguage('ru')" ng-class="lang == 'ru' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ru</button>
+					<button ng-click="setLanguage('ua')" ng-class="lang == 'ua' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ua</button>
+				</div>
+				<br>
+				
+				<div ng-switch on="lang">
+					<div ng-switch-when="en">
+						<h3>Create a project presentation with PowerPoint</h3>
+						<p>Developing motivation map of homeowner association in my project “Self-Government” during February-May 2015.</p>
+						<p>Download the file of the presentation is possible here: <a href="/download/presentation_motivation_map_in_project_self-government.pptx.zip" target="_blank">pptx</a>, <a href="/download/presentation_motivation_map_in_project_self-government.ppsx.zip" target="_blank">ppsx</a>.</p>
+						<br>
+						<p>Example of slides for viewing..</p>
+					</div>					
+					<div ng-switch-when="ru">
+						<h3>Создание презентации проекта в PowerPoint</h3>
+						<p>Разработка мотивационной карты совладельцев дома в моем собственном проекте "Самоуправление" в течение февраля-мая 2015 года.</p>
+						<p>Скачать файл презентации можно здесь: <a href="/download/presentation_motivation_map_in_project_self-government.pptx.zip" target="_blank">pptx</a>, <a href="/download/presentation_motivation_map_in_project_self-government.ppsx.zip" target="_blank">ppsx</a>.</p>
+						<br>
+						<p>Пример слайдов для просмотра..</p>
+					</div>					
+					<div ng-switch-when="ua">
+						<h3>Створення презентації проекту в PowerPoint</h3>
+						<p>Розробка мотиваційної мапи співласників будинку у моєму власному проекті "Самоврядування" протягом лютого-травня 2015 року.</p>
+						<p>Скачати файл презентації можна тут: <a href="/download/presentation_motivation_map_in_project_self-government.pptx.zip" target="_blank">pptx</a>, <a href="/download/presentation_motivation_map_in_project_self-government.ppsx.zip" target="_blank">ppsx</a>.</p>
+						<br>
+						<p>Приклад слайдів для перегляду..</p>
+					</div>					
+					<div ng-switch-default>
+						<h3>Tworzenie prezentacji projectu w PowerPoint</h3>
+						<p>Opracowanie mapy motywacje współnoty mieszkaniowej w moim własnym projekcie "Samorząd" w ciągu lutego-maja 2015 roku.</p>
+						<p>Załadować plik prezentacji można tu: <a href="/download/presentation_motivation_map_in_project_self-government.pptx.zip" target="_blank">pptx</a>, <a href="/download/presentation_motivation_map_in_project_self-government.ppsx.zip" target="_blank">ppsx</a>.</p>
+						<br>
+						<p>Przykład slajdów dla przeglądu..</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			<div class="row masonry" data-columns>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_1.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_2.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_7.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_20.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_23.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_45.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_71.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_72.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_78.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_79.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_100.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_101.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_104.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_109.jpg" alt="">
+				</div>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/presentation_1/slide_112.jpg" alt="">
+				</div>
+			</div>
+			</div>
+			<hr>
+			<div class="row">
+				<small>© 2018, Segrij Bondarenko</small>
+			</div>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/js/index.js"></script>
+    <!-- Library -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/salvattore.min.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/index.ang.js"></script>
+</body>
+</html>

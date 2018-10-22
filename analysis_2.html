@@ -1,0 +1,68 @@
+<! DOCUMENT HTML>
+<html lang="en" ng-app='app'>
+<head>
+	<title>Logo designer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sergij Bondarenko" />
+	<meta name="descriptions" content="Определение цветовой модели сайта" />
+	<meta name="keywords" content="logo, " lang="ru" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body onload="goLoad()">
+	<div class="container">
+		<div ng-controller="ctrLanguage">
+			<div class="row">
+				<h4 class="text-right"><a href="/">myOtherSkills</a></h4>
+				<div ng-switch on="lang">
+					<h1 ng-switch-when="en">Business analyst</h1>
+					<h1 ng-switch-when="ru">Бизнес-аналитик</h1>
+					<h1 ng-switch-when="ua">Бізнес-аналітик</h1>
+					<h1 ng-switch-default>Analityk biznesowy</h1>
+				</div>
+				<hr>
+				<div class="text-right">
+					<button ng-click="setLanguage('en')" ng-class="lang == 'en' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">en</button>
+					<button ng-click="setLanguage('pl')" ng-class="lang == 'pl' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">pl</button>
+					<button ng-click="setLanguage('ru')" ng-class="lang == 'ru' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ru</button>
+					<button ng-click="setLanguage('ua')" ng-class="lang == 'ua' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ua</button>
+				</div>
+				<br>
+				
+				<div ng-switch on="lang">
+					<div ng-switch-when="en">
+						<h3>Analysis of the public transport system of the city and modeling its financial condition</h3>
+						<p>Development of the project "Passenger Motivational Card" during April-May 2018 as part of volunteering in the "Common Ukrainian Community of Passenger Transport Development Assistance", which presents the calculation of the payback of the city's public transport renewal and the implementation of the electronic fare payment system and its strategies of realization.</p>
+					</div>					
+					<div ng-switch-when="ru">
+						<h3>Анализ системы общественного транспорта города и моделирование ее финансового состояния</h3>
+						<p>Разработка проекта "Мотивационная карта пассажира" в течение апреля-мая 2018 года в рамках волонтерства в "Общеукраинском сообществе помощи развитию пассажирского транспорта", в котором представлен расчет окупаемости обновления общественного транспорта города и внедрения системы электронной оплаты проезда, а также стратегии их реализации.</p>
+					</div>					
+					<div ng-switch-when="ua">
+						<h3>Аналіз системи громадського транспорту міста та моделювання її фінансового стану</h3>
+						<p>Розробка проекту "Мотиваційна мапа пасажира" протягом квітня-травня 2015 року в межах волонтерства у "Загальноукраїнскому співтоваристві допомоги розвитку пасажирського транспорту", в якому представлено розрахунок окупності оновлення громадського транспорту міста і впровадження системи електронное оплати проїзду, а також стратегії їх реалізації.</p>
+					</div>					
+					<div ng-switch-default>
+						<h3>Analiza systemu transportu publicznego miasta i modelowanie jego kondycji finansowej</h3>
+						<p>Opracowanie projektu "Mapa motywacje pasażera" w ciągu kwietnia-maja 2015 roku w ramach wolontariatu w "Ogólnoukraińskim społeczeństwie pomocy rozwojowi pasażerskiego transportu", w którym przedstawiono rozliczenie opłacalności odnowy publicznego transportu miasta i wprowadzenia systemu elektronicznej opłaty przejazdu oraz strategii ich realizacji.</p>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="row">
+				<iframe class="embed" src="download/Mapa_motywacje_pasazera.pdf" width="80%" height="500"></iframe>
+			</div>
+			<hr>
+			<div class="row">
+				<small>© 2018, Segrij Bondarenko</small>
+			</div>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/js/index.js"></script>
+    <!-- Library -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/index.ang.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px) {
+	.masonry[data-columns]::before {
+		content: '1 .col-xs-12';
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.masonry[data-columns]::before {
+		content: '2 .col-xs-6';
+	}	
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.masonry[data-columns]::before {
+		content: '3 .col-xs-4';
+	}	
+}
+@media screen and (min-width: 1200px) {
+	.masonry[data-columns]::before {
+		content: '3 .col-xs-4';
+	}	
+}
+
+a:hover  {
+	text-decoration: none;
+	color: #f00;
+}
+
+a:focus  {
+	text-decoration: none;
+}
+
+.gallery {
+	position:relative;
+	margin-bottom: 10px;
+}
+
+.image {
+	padding: 10px;
+    width: 100%;
+    height: auto;
+	border: 1px solid;
+    border-radius: 10px;
+}

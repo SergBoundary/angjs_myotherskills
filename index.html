@@ -1,0 +1,196 @@
+<! DOCUMENT HTML>
+<html lang="en" ng-app='app'>
+<head>
+	<title>myOtherSkills</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sergij Bondarenko" />
+	<meta name="descriptions" content="Определение цветовой модели сайта" />
+	<meta name="keywords" content="logo, " lang="ru" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body onload="goLoad()">
+	<div class="container">
+		<div ng-controller="ctrLanguage">
+			<div class="row">
+				<h1>{{index}}</h1>
+				<hr>
+				<div class="text-right">
+					<button ng-click="setLanguage('en')" ng-class="lang == 'en' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">en</button>
+					<button ng-click="setLanguage('pl')" ng-class="lang == 'pl' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">pl</button>
+					<button ng-click="setLanguage('ru')" ng-class="lang == 'ru' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ru</button>
+					<button ng-click="setLanguage('ua')" ng-class="lang == 'ua' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ua</button>
+				</div>
+				
+				<div ng-switch on="lang">
+				<div ng-switch-when="en">
+				<h3>HTML Coder</h3>
+				<dl>
+					<dt><a href="html_1.html">Creation and development of the organization's website</a></dt>
+					<dd>Volunteering in the public non-governmental organization "System of Terms" during February-July 2005.</dd>
+				</dl>
+				<h3>Logo designer</h3>
+				<dl>
+					<dt><a href="logo_1.html">Creating a poster</a></dt>
+					<dd>Volunteering at the environmental event "Give the Earth a Flower" during March 2015.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_2.html">Creating an organization logo</a></dt>
+					<dd>Volunteering at the Charitable Organization "Angel Gift" (helping children with cancer) during April 2015.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_3.html">Creating a project logo</a></dt>
+					<dd>Volunteering in the public project "Code of the Free Human" during April-September 2015.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_4.html">Creating a logo for an online store</a></dt>
+					<dd>Creating a logo for the project of the flower online store "Amore Mio" during October 2015.</dd>
+				</dl>
+				<h3>Presentation designer</h3>
+				<dl>
+					<dt><a href="presentation_1.html">Create a project presentation with PowerPoint</a></dt>
+					<dd>Developing motivation map of homeowner association in my project “Self-Government” during February-May 2015.</dd>
+				</dl>
+				<h3>Business analyst</h3>
+				<dl>
+					<dt><a href="analysis_1.html">Analysis of the system of homeowner association self-government</a></dt>
+					<dd>Developing motivation map of homeowner association in my project “Self-Government” during February-May 2015.</dd>
+				</dl>
+				<dl>
+					<dt><a href="analysis_2.html">Analysis of the public transport system of the city and modeling its financial condition</a></dt>
+					<dd>Development of the project "Passenger Motivational Card" during April-May 2018 as part of volunteering in the "Common Ukrainian Community of Passenger Transport Development Assistance", which presents the calculation of the payback of the city's public transport renewal and the implementation of the electronic fare payment system and its strategies of realization.</dd>
+				</dl>
+				</div>
+				
+				<div ng-switch-when="ru">
+				<h3>Верстальщик</h3>
+				<dl>
+					<dt><a href="html_1.html">Создание и развитие веб-сайта организации</a></dt>
+					<dd>Волонтерство в Общественной неправительственной организации "Система Терминов" в течение февраля-июля 2005 года.</dd>
+				</dl>
+				<h3>Дизайнер логотипов</h3>
+				<dl>
+					<dt><a href="logo_1.html">Проектирование плаката</a></dt>
+					<dd>Волонтерство в экологическом мероприятии "Подари Земле Цветок" в течение марта 2015 года.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_2.html">Создание логотипа организации</a></dt>
+					<dd>Волонтерство в Благотворительной организации "Подарок Ангела" (помощь больным раком детям) в течение апреля 2015 года.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_3.html">Создание логотипа проекта</a></dt>
+					<dd>Волонтерство в публичном проекте "Кодекс Вольного Человека" в течение апреля-сентября 2015 года.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_4.html">Создание логотипа интернет-магазина</a></dt>
+					<dd>Создание логотипа для проекта цветочного интернет-магазина "Amore Mio" в течение октября 2015 года.</dd>
+				</dl>
+				<h3>Дизайнер презентаций</h3>
+				<dl>
+					<dt><a href="presentation_1.html">Создание презентации проекта в PowerPoint</a></dt>
+					<dd>Разработка мотивационной карты совладельцев дома в собственном проекте "Самоуправление" в течение февраля-мая 2015 года.</dd>
+				</dl>
+				<h3>Бизнес-аналитик</h3>
+				<dl>
+					<dt><a href="analysis_1.html">Анализ системы домового самоуправления</a></dt>
+					<dd>Разработка мотивационной карты совладельцев дома в собственном проекте "Самоуправление" в течение февраля-мая 2015 года. Создание презентации проекта в PowerPoint.</dd>
+				</dl>
+				<dl>
+					<dt><a href="analysis_2.html">Анализ системы общественного транспорта города и моделирование ее финансового состояния</a></dt>
+					<dd>Разработка проекта "Мотивационная карта пассажира" в течение апреля-мая 2018 года в рамках волонтерства в "Общеукраинском сообществе помощи развитию пассажирского транспорта", в котором представлен расчет окупаемости обновления общественного транспорта города и внедрения системы электронной оплаты проезда, а также стратегии их реализации.</dd>
+				</dl>
+				</div>
+				
+				<div ng-switch-when="ua">
+				<h3>Верстальник</h3>
+				<dl>
+					<dt><a href="html_1.html">Створення та розвиток веб-сайту організації</a></dt>
+					<dd>Волонтерство у Громадській неурядовій организації "Система Термінів" протягом лютого-липня 2005 року.</dd>
+				</dl>
+				<h3>Дизайнер логотипів</h3>
+				<dl>
+					<dt><a href="logo_1.html">Проектування плакату</a></dt>
+					<dd>Волонтерство в екологичному заході "Подаруй Землі Квітку" протягом березня 2015 року.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_2.html">Створення логотипу організації</a></dt>
+					<dd>Волонтерство у Благодійній організації "Подарунок Ангола" (допомога хворим на рак дітям) протягом квітня 2015 року.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_3.html">Створення логотипу проекту</a></dt>
+					<dd>Волонтерство у публичному проекті "Кодекс Вільної Людини" протягом квітня-вересня 2015 року.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_4.html">Створення логотипу інтернет-магазину</a></dt>
+					<dd>Створення логотипу для проекту квіткового інтернет-магазину "Amore Mio" протягом жовтня 2015 року.</dd>
+				</dl>
+				<h3>Дизайнер презентацій</h3>
+				<dl>
+					<dt><a href="presentation_1.html">Створення презентації проекту в PowerPoint</a></dt>
+					<dd>Розробка мотиваційної мапи співласників будинку у моєму власному проекті "Самоврядування" протягом лютого-травня 2015 року.</dd>
+				</dl>
+				<h3>Бізнес-аналітик</h3>
+				<dl>
+					<dt><a href="analysis_1.html">Аналіз системи будинкового самоврядування</a></dt>
+					<dd>Створення мотиваційної мапи співласників будинку у моєму власному проекті "Самоврядування" протягом лютого-травня 2015 року.</dd>
+				</dl>
+				<dl>
+					<dt><a href="analysis_2.html">Аналіз системи громадського транспорту міста та моделювання її фінансового стану</a></dt>
+					<dd>Розробка проекту "Мотиваційна мапа пасажира" протягом квітня-травня 2015 року в межах волонтерства у "Загальноукраїнскому співтоваристві допомоги розвитку пасажирського транспорту", в якому представлено розрахунок окупності оновлення громадського транспорту міста і впровадження системи електронное оплати проїзду, а також стратегії їх реалізації.</dd>
+				</dl>
+				</div>
+				
+				<div ng-switch-default>
+				<h3>HTML Coder</h3>
+				<dl>
+					<dt><a href="html_1.html">Budowa i rozbudowa strony internetowej organizacji</a></dt>
+					<dd>Wolontariat w Organizacji pozarządowej "Systema Terminów" w ciągu lutego-lipca 2005 roku.</dd>
+				</dl>
+				<h3>Projektant logo</h3>
+				<dl>
+					<dt><a href="logo_1.html">Projektowanie plakatu</a></dt>
+					<dd>Wolontariat w ekologicznym wydarzeniu "Give the Earth a Flower" w ciągu marca 2015 roku.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_2.html">Tworzenie logo organizacji</a></dt>
+					<dd>Wolontariat w Organizacji charytatywnej "Dar Anioła" (pomoc dzieciom chorym na raka) w ciągu kwietnia 2015 roku.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_3.html">Tworzenie logo projektu</a></dt>
+					<dd>Wolontariat w publicznym projekcie "Kodeks Wolnego Człowieka" w ciągu kwietnia-września 2015 roku.</dd>
+				</dl>
+				<dl>
+					<dt><a href="logo_4.html">Tworzenie logo dla sklepu internetowego</a></dt>
+					<dd>Tworzenie logo dla kwiaciarni internetowej "Amore Mio" w ciągu października 2015 roku.</dd>
+				</dl>
+				<h3>Projektant prezentacji</h3>
+				<dl>
+					<dt><a href="presentation_1.html">Tworzenie prezentacji projectu w PowerPoint</a></dt>
+					<dd>Opracowanie mapy motywacje współnoty mieszkaniowej w moim własnym projekcie "Samorząd" w ciągu lutego-maja 2015 roku.</dd>
+				</dl>
+				<h3>Analityk biznesowy</h3>
+				<dl>
+					<dt><a href="analysis_1.html">Analiza systemu samorządu współnoty mieszkaniowej</a></dt>
+					<dd>Opracowanie mapy motywacje współnoty mieszkaniowej w moim własnym projekcie "Samorząd" w ciągu lutego-maja 2015 roku.</dd>
+				</dl>
+				<dl>
+					<dt><a href="analysis_2.html">Analiza systemu transportu publicznego miasta i modelowanie jego kondycji finansowej</a></dt>
+					<dd>Opracowanie projektu "Mapa motywacje pasażera" w ciągu kwietnia-maja 2015 roku w ramach wolontariatu w "Ogólnoukraińskim społeczeństwie pomocy rozwojowi pasażerskiego transportu", w którym przedstawiono rozliczenie opłacalności odnowy publicznego transportu miasta i wprowadzenia systemu elektronicznej opłaty przejazdu oraz strategii ich realizacji.</dd>
+				</dl>
+				</div>
+				</div>
+				<hr>
+			</div>
+			<div class="row">
+				<small>© 2018, Segrij Bondarenko</small>
+			</div>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/js/index.js"></script>
+    <!-- Library -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/index.ang.js"></script>
+</body>
+</html>

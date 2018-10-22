@@ -1,0 +1,68 @@
+<! DOCUMENT HTML>
+<html lang="en" ng-app='app'>
+<head>
+	<title>Logo designer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sergij Bondarenko" />
+	<meta name="descriptions" content="Определение цветовой модели сайта" />
+	<meta name="keywords" content="logo, " lang="ru" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body onload="goLoad()">
+	<div class="container">
+		<div ng-controller="ctrLanguage">
+			<div class="row">
+				<h4 class="text-right"><a href="/">myOtherSkills</a></h4>
+				<div ng-switch on="lang">
+					<h1 ng-switch-when="en">Business analyst</h1>
+					<h1 ng-switch-when="ru">Бизнес-аналитик</h1>
+					<h1 ng-switch-when="ua">Бізнес-аналітик</h1>
+					<h1 ng-switch-default>Analityk biznesowy</h1>
+				</div>
+				<hr>
+				<div class="text-right">
+					<button ng-click="setLanguage('en')" ng-class="lang == 'en' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">en</button>
+					<button ng-click="setLanguage('pl')" ng-class="lang == 'pl' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">pl</button>
+					<button ng-click="setLanguage('ru')" ng-class="lang == 'ru' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ru</button>
+					<button ng-click="setLanguage('ua')" ng-class="lang == 'ua' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ua</button>
+				</div>
+				<br>
+				
+				<div ng-switch on="lang">
+					<div ng-switch-when="en">
+						<h3>Analysis of the system of homeowner association self-government</h3>
+						<p>Developing motivation map of homeowner association in my project “Self-Government” during February-May 2015.</p>
+					</div>					
+					<div ng-switch-when="ru">
+						<h3>Анализ системы домового самоуправления</h3>
+						<p>Разработка мотивационной карты совладельцев дома в собственном проекте "Самоуправление" в течение февраля-мая 2015 года. Создание презентации проекта в PowerPoint.</p>
+					</div>					
+					<div ng-switch-when="ua">
+						<h3>Аналіз системи будинкового самоврядування</h3>
+						<p>Створення мотиваційної мапи співласників будинку у моєму власному проекті "Самоврядування" протягом лютого-травня 2015 року.</p>
+					</div>					
+					<div ng-switch-default>
+						<h3>Analiza systemu samorządu współnoty mieszkaniowej</h3>
+						<p>Opracowanie mapy motywacje współnoty mieszkaniowej w moim własnym projekcie "Samorząd" w ciągu lutego-maja 2015 roku.</p>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="row">
+				<iframe class="embed" src="download/Prezentacja_mapy_motywacije_projektu_Samorzad.pdf" width="80%" height="500"></iframe>
+			</div>
+			<hr>
+			<div class="row">
+				<small>© 2018, Segrij Bondarenko</small>
+			</div>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/js/index.js"></script>
+    <!-- Library -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/index.ang.js"></script>
+</body>
+</html>

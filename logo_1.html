@@ -1,0 +1,81 @@
+<! DOCUMENT HTML>
+<html lang="en" ng-app='app'>
+<head>
+	<title>Logo designer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sergij Bondarenko" />
+	<meta name="descriptions" content="Определение цветовой модели сайта" />
+	<meta name="keywords" content="logo, " lang="ru" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="/css/index.css">
+	<link type="text/css" rel="stylesheet" href="/css/masonry.css">
+</head>
+<body onload="goLoad()">
+	<div class="container">
+		<div ng-controller="ctrLanguage">
+			<div class="row">
+				<h4 class="text-right"><a href="/">myOtherSkills</a></h4>
+				<div ng-switch on="lang">
+					<h1 ng-switch-when="en">Logo designer</h1>
+					<h1 ng-switch-when="ru">Дизайнер логотипов</h1>
+					<h1 ng-switch-when="ua">Дизайнер логотипів</h1>
+					<h1 ng-switch-default>Projektant logo</h1>
+				</div>
+				<hr>
+				<div class="text-right">
+					<button ng-click="setLanguage('en')" ng-class="lang == 'en' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">en</button>
+					<button ng-click="setLanguage('pl')" ng-class="lang == 'pl' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">pl</button>
+					<button ng-click="setLanguage('ru')" ng-class="lang == 'ru' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ru</button>
+					<button ng-click="setLanguage('ua')" ng-class="lang == 'ua' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ua</button>
+				</div>
+				<br>
+				
+				<div ng-switch on="lang">
+					<div ng-switch-when="en">
+						<h3>Creating a poster</h3>
+						<p>Volunteering at the environmental event "Give the Earth a Flower" during March 2015.</p>
+						<br>
+						<p>Sketch of poster..</p>
+					</div>					
+					<div ng-switch-when="ru">
+						<h3>Проектирование плаката</a></dt></h3>
+						<p>Волонтерство в экологическом мероприятии "Подари Земле Цветок" в течение марта 2015 года.</p>
+						<br>
+						<p>Эскиз плаката..</p>
+					</div>					
+					<div ng-switch-when="ua">
+						<h3>Проектування плакату</h3>
+						<p>Волонтерство в екологичному заході "Подаруй Землі Квітку" протягом березня 2015 року.</p>
+						<br>
+						<p>Ескіз плакату..</p>
+					</div>					
+					<div ng-switch-default>
+						<h3>Projektowanie plakatu</h3>
+						<p>Wolontariat w ekologicznym wydarzeniu "Give the Earth a Flower" w ciągu marca 2015 roku.</p>
+						<br>
+						<p>Pierworys plakatu..</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			<div class="row masonry" data-columns>
+				<div class="item gallery">
+					<img class="img-responsive image" src="/img/logo_1/podaruj_ziemli_kwitku.png" alt="">
+				</div>
+			</div>
+			</div>
+			<div class="row">
+				<small>© 2018, Segrij Bondarenko</small>
+			</div>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/js/index.js"></script>
+    <!-- Library -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/salvattore.min.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/index.ang.js"></script>
+</body>
+</html>

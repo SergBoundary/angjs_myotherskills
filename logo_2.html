@@ -1,0 +1,177 @@
+<! DOCUMENT HTML>
+<html lang="en" ng-app='app'>
+<head>
+	<title>Logo designer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sergij Bondarenko" />
+	<meta name="descriptions" content="Определение цветовой модели сайта" />
+	<meta name="keywords" content="logo, " lang="ru" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="/css/index.css">
+	<link type="text/css" rel="stylesheet" href="/css/masonry.css">
+</head>
+<body onload="goLoad()">
+	<div class="container">
+		<div ng-controller="ctrLanguage">
+			<div class="row">
+				<h4 class="text-right"><a href="/">myOtherSkills</a></h4>
+				<div ng-switch on="lang">
+					<h1 ng-switch-when="en">Logo designer</h1>
+					<h1 ng-switch-when="ru">Дизайнер логотипов</h1>
+					<h1 ng-switch-when="ua">Дизайнер логотипів</h1>
+					<h1 ng-switch-default>Projektant logo</h1>
+				</div>
+				<hr>
+				<div class="text-right">
+					<button ng-click="setLanguage('en')" ng-class="lang == 'en' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">en</button>
+					<button ng-click="setLanguage('pl')" ng-class="lang == 'pl' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">pl</button>
+					<button ng-click="setLanguage('ru')" ng-class="lang == 'ru' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ru</button>
+					<button ng-click="setLanguage('ua')" ng-class="lang == 'ua' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ua</button>
+				</div>
+				<br>
+				
+				<div ng-switch on="lang">
+					<div ng-switch-when="en">
+						<h3>Creating an organization logo</h3>
+						<p>Volunteering at the Charitable Organization "Angel Gift" (helping children with cancer) during April 2015.</p>
+						<br>
+						<p>Final sketches of logotypes of 11 April, 2015..</p>
+					</div>					
+					<div ng-switch-when="ru">
+						<h3>Создание логотипа организации</h3>
+						<p>Волонтерство в Благотворительной организации "Подарок Ангела" (помощь больным раком детям) в течение апреля 2015 года.</p>
+						<br>
+						<p>Окончательные эскизы логотипов от 11 апреля 2015 р..</p>
+					</div>					
+					<div ng-switch-when="ua">
+						<h3>Створення логотипу організації</h3>
+						<p>Волонтерство у Благодійній організації "Подарунок Ангела" (допомога хварим на рак дітям) протягом квітня 2015 року.</p>
+						<br>
+						<p>Остаточні ескізи логотипів від 11 квітня 2015 р..</p>
+					</div>					
+					<div ng-switch-default>
+						<h3>Tworzenie logo organizacji</h3>
+						<p>Wolontariat w Organizacji charytatywnej "Dar Anioła" (pomoc dzieciom chorym na raka) w ciągu kwietnia 2015 roku.</p>
+						<br>
+						<p>Ostateczne pierworysy logotypów od 11 kwietnia 2015 r..</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row masonry" data-columns>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_angela_black_0.jpg" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_angela_kolor_0.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div ng-switch on="lang">
+					<div ng-switch-when="en"><p>Preliminary sketches of logotypes of 3 April, 2015..</p></div>
+					<div ng-switch-when="ru"><p>Предварительные эскизы логотипов от 3 апреля 2015 р..</p></div>
+					<div ng-switch-when="ua"><p>Попередні ескізи логотипів від 3 квітня 2015 р..</p></div>
+					<div ng-switch-default><p>Poprzednie pierworysy logotypów od 3 kwietnia 2015 r..</p></div>
+				</div>
+				<div class="row masonry" data-columns>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_1.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_2.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div ng-switch on="lang">
+					<div ng-switch-when="en"><p>Preliminary sketches of logotypes of 5 April, 2015..</p></div>
+					<div ng-switch-when="ru"><p>Предварительные эскизы логотипов от 5 апреля 2015 р..</p></div>
+					<div ng-switch-when="ua"><p>Попередні ескізи логотипів від 5 квітня 2015 р..</p></div>
+					<div ng-switch-default><p>Poprzednie pierworysy logotypów od 5 kwietnia 2015 r..</p></div>
+				</div>
+				<div class="row masonry" data-columns>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_3.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_4.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_5.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_6.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_7.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_8.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_9.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div ng-switch on="lang">
+					<div ng-switch-when="en"><p>Preliminary sketches of logotypes of 7 April, 2015..</p></div>
+					<div ng-switch-when="ru"><p>Предварительные эскизы логотипов от 7 апреля 2015 р..</p></div>
+					<div ng-switch-when="ua"><p>Попередні ескізи логотипів від 7 квітня 2015 р..</p></div>
+					<div ng-switch-default><p>Poprzednie pierworysy logotypów od 7 kwietnia 2015 r..</p></div>
+				</div>
+				<div class="row masonry" data-columns>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_10a.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_10b.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_10c.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_10d.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_10e.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_10f.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_11a.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_11b.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_11c.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_11d.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_11e.png" alt="">
+					</div>
+					<div class="item gallery">
+						<img class="img-responsive image" src="/img/logo_2/podarunok_jangola_11f.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<small>© 2018, Segrij Bondarenko</small>
+			</div>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/js/index.js"></script>
+    <!-- Library -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/salvattore.min.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/index.ang.js"></script>
+</body>
+</html>

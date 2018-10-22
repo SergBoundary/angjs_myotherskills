@@ -1,0 +1,93 @@
+<! DOCUMENT HTML>
+<html lang="en" ng-app='app'>
+<head>
+	<title>Logo designer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sergij Bondarenko" />
+	<meta name="descriptions" content="Определение цветовой модели сайта" />
+	<meta name="keywords" content="logo, " lang="ru" />
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="/css/index.css">
+	<link type="text/css" rel="stylesheet" href="/css/masonry.css">
+</head>
+<body onload="goLoad()">
+	<div class="container">
+		<div ng-controller="ctrLanguage">
+			<div class="row">
+				<h4 class="text-right"><a href="/">myOtherSkills</a></h4>
+				<div ng-switch on="lang">
+					<h1 ng-switch-when="en">Logo designer</h1>
+					<h1 ng-switch-when="ru">Дизайнер логотипов</h1>
+					<h1 ng-switch-when="ua">Дизайнер логотипів</h1>
+					<h1 ng-switch-default>Projektant logo</h1>
+				</div>
+				<hr>
+				<div class="text-right">
+					<button ng-click="setLanguage('en')" ng-class="lang == 'en' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">en</button>
+					<button ng-click="setLanguage('pl')" ng-class="lang == 'pl' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">pl</button>
+					<button ng-click="setLanguage('ru')" ng-class="lang == 'ru' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ru</button>
+					<button ng-click="setLanguage('ua')" ng-class="lang == 'ua' ? 'btn btn-primary btn-xs' : 'btn btn-default btn-xs'"  type="button">ua</button>
+				</div>
+				<br>
+				
+				<div ng-switch on="lang">
+					<div ng-switch-when="en">
+						<h3>Creating a project logo</h3>
+						<p>Volunteering in the public project "Code of the Free Human" during April-September 2015.</p>
+						<br>
+						<p>Sketches of logotypes..</p>
+					</div>					
+					<div ng-switch-when="ru">
+						<h3>Создание логотипа проекта</h3>
+						<p>Волонтерство в публичном проекте "Кодекс Вольного Человека" в течение апреля-сентября 2015 года.</p>
+						<br>
+						<p>Эскизы логотипов..</p>
+					</div>					
+					<div ng-switch-when="ua">
+						<h3>Створення логотипу проекту</h3>
+						<p>Волонтерство у публичному проекті "Кодекс Вільної Людини" протягом квітня-вересня 2015 року.</p>
+						<br>
+						<p>Ескізи логотипів..</p>
+					</div>					
+					<div ng-switch-default>
+						<h3>Tworzenie logo projektu</h3>
+						<p>Wolontariat w publicznym projekcie "Kodeks Wolnego Człowieka" w ciągu kwietnia-września 2015 roku.</p>
+						<br>
+						<p>Pierworysy logotypów..</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			<div class="row masonry" data-columns>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru000.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru000.jpg" alt=""></a>
+				</div>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru100.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru100.jpg" alt=""></a>
+				</div>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru121.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru121.jpg" alt=""></a>
+				</div>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru413.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru413.jpg" alt=""></a>
+				</div>
+				<div class="item gallery">
+					<a href="http://systematerminorum.narod.ru/ppru41502.htm" target="_blank"><img class="img-responsive" src="/img/html_1/ppru41502.jpg" alt=""></a>
+				</div>
+			</div>
+			</div>
+			<div class="row">
+				<small>© 2018, Segrij Bondarenko</small>
+			</div>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/js/index.js"></script>
+    <!-- Library -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/salvattore.min.js"></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/index.ang.js"></script>
+</body>
+</html>
